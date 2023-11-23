@@ -9,9 +9,44 @@
 .side-panel{
     background-color: blue;
     flex: 0.3;
+    display: flex;
+    flex-direction: column;
 }
 
 .work-area{
     background-color: blueviolet;
     flex: 0.7;
+}
+
+/* SIDE PANEL*/
+.sp-header {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sp-search {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 10px;
+    display: flex;
+
+}
+.search-box {
+    outline-width: 0;
+    border: none;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.sp-chatsection {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 5px;
+    margin: 10px;
+    flex: 1; 
 }
