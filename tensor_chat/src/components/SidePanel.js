@@ -8,9 +8,35 @@ import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOu
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import Chats from './Chats';
+import { useState } from 'react';
 
 
 function SidePanel() {
+    /* Setting up dummy data for the chat */
+    const [conversations, setConversations] = useState([
+        {
+            name: "Test1",
+            lastMessage: "Last message",
+            timeStap: "today"
+        },
+        {
+            name: "Test2",
+            lastMessage: "Last message",
+            timeStap: "today"
+        }
+    ])
+
+    /* Setting up a variable that set the <chat/> props*/
+
+    const Chat = conversations.map(item => {
+        return (
+            <Chats 
+            name = {item.name}
+            lastMessage={item.lastMessage}
+            timeStap={item.timeStap}/>
+        )
+    })
+
   return (
     <div className='side-panel'>
         {/* The header section of the side panel*/}
@@ -50,7 +76,7 @@ function SidePanel() {
         </div>
 
         {/* The chat section of the side panel*/}
-        <div className='sp-chatsection'> <Chats/>  </div>
+        <div className='sp-chatsection'>{Chat}</div>
     </div>
     
   )
