@@ -5,7 +5,7 @@ import Workarea from "./Workarea";
 
 function MainContainer() {
   return (
-    <div className="main-container">MainContainer
+    <div className="main-container">
       <SidePanel />
       <Workarea />
     </div>

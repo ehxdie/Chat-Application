@@ -3,7 +3,7 @@ import "./myStyles.css";
 
 function Workarea() {
   return (
-    <div>Workarea</div>
+    <div className='work-area'> </div>
   )
 }
 
