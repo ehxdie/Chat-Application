@@ -3,6 +3,9 @@ import "./myStyles.css"
 import { IconButton } from '@mui/material'
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
+import ReceivedMessages from './ReceivedMessages';
+import SentMessages from './SentMessages';
+
 
 function ChatArea(props) {
   return (
@@ -19,10 +22,13 @@ function ChatArea(props) {
           </IconButton>
         </div>
 
-        <div className='chatArea-messages'>messages</div>
+        <div className='chatArea-messages'>
+          <ReceivedMessages/>
+          <SentMessages/>
+        </div>
 
         <div className='chatArea-input'>
-          <input placeholder='T ype a message' className='search-box'/> 
+          <input placeholder='Type a message' className = 'search-box'/> 
           <IconButton>
             <SendOutlinedIcon/>
           </IconButton>

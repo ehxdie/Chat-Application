@@ -119,14 +119,43 @@
     flex: 1;
 }
 .chatArea-messages{
-    background-color: beige;
-    flex: 1;
+    background-color: white;
+    flex: 1;    
+}
+.self-message-container{
+    display: inline-flex;
+    justify-content: flex-end;
+    background-color: blanchedalmond;
+    align-items: flex-end;
+    gap: 4px;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    
+}
+.other-message-container{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 20px;
+
 }
 .chatArea-input{
-    background-color: bisque;
+    background-color: white;
     padding: 10px 10px;
     margin: 10px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
+}
+
+.self-timestap{
+    font-size: 0.75rem;
+    justify-self: flex-end;
+}
+.other-text-content{
+    background-color: beige;
 }
