@@ -9,6 +9,7 @@ import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import Chats from './Chats';
 import { useState } from 'react';
+import ChatArea from './ChatArea';
 
 
 function SidePanel() {
@@ -36,6 +37,9 @@ function SidePanel() {
             timeStap={item.timeStap}/>
         )
     })
+
+   
+    
 
   return (
     <div className='side-panel'>
