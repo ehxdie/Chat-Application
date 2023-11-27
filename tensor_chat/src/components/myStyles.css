@@ -61,6 +61,10 @@
     padding: 5px;
     margin: 5px;
     border-radius: 20px;
+    overflow: scroll;
+}
+.chat-box::-webkit-scrollbar{
+    display: none;
 }
 
 .chat-icon{
@@ -121,7 +125,11 @@
 .chatArea-messages{
     background-color: white;
     flex: 1;  
-    overflow: scroll;  
+    overflow: scroll;
+
+}
+.chatArea-messages::-webkit-scrollbar{
+    display: none;
 }
 .self-message-container{ 
     display: flex;
@@ -161,3 +169,5 @@
     display: flex;
     justify-content: flex-end;
 }
+
+/* WELCOME PAGE */

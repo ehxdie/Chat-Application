@@ -11,6 +11,7 @@ function ReceivedMessages() {
                   <p className='chat-name'>{props1.name}</p>
                   <p className='chat-message'>{props1.message}</p>
                   <p className='self-timestap'>12:00 am</p>
+
               </div>  
     </div>
   )

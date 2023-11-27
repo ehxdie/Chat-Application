@@ -2,6 +2,8 @@ import "./myStyles.css";
 import React, { useState } from 'react';
 import SidePanel from "./SidePanel";
 import ChatArea from "./ChatArea";
+import WelcomePage from "./WelcomePage";
+
 
 function MainContainer() {
   /* Dummy data for the chatArea */
@@ -25,7 +27,9 @@ function MainContainer() {
   return (
     <div className="main-container">
       <SidePanel />
-      {Chatrea}
+      {/*{Chatrea}*/}
+
+      <WelcomePage/>
     </div>
     
   )

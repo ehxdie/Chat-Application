@@ -25,6 +25,10 @@ function ChatArea(props) {
         <div className='chatArea-messages'>
           <ReceivedMessages/>
           <SentMessages/>
+          <ReceivedMessages />
+          <SentMessages />
+        <ReceivedMessages />
+        <SentMessages />
         </div>
 
         <div className='chatArea-input'>
