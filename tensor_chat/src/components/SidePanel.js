@@ -13,7 +13,7 @@ import ChatArea from './ChatArea';
 
 
 function SidePanel() {
-    /* Setting up dummy data for the chat */
+    /* Setting up dummy data for the chat preview*/
     const [conversations, setConversations] = useState([
         {
             name: "Test1",

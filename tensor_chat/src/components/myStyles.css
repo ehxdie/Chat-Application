@@ -120,28 +120,32 @@
 }
 .chatArea-messages{
     background-color: white;
-    flex: 1;    
+    flex: 1;  
+    overflow: scroll;  
 }
-.self-message-container{
-    display: inline-flex;
+.self-message-container{ 
+    display: flex;
     justify-content: flex-end;
-    background-color: blanchedalmond;
-    align-items: flex-end;
-    gap: 4px;
+    align-items: center;
+    gap: 10px;
     padding: 10px 10px;
-    margin: 10px;
     border-radius: 20px;
     
+
 }
 .other-message-container{
-    display: inline-flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
     padding: 10px 10px;
-    margin: 10px;
-    border-radius: 20px;
 
+}
+.message-box {
+    background-color: wheat;
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 20px;
 }
 .chatArea-input{
     background-color: white;
@@ -154,8 +158,6 @@
 
 .self-timestap{
     font-size: 0.75rem;
-    justify-self: flex-end;
-}
-.other-text-content{
-    background-color: wheat;
+    display: flex;
+    justify-content: flex-end;
 }

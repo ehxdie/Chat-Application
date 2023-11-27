@@ -7,10 +7,10 @@ function ReceivedMessages() {
   return (
     <div className='other-message-container'>
               <div className='chat-icon'>{props1.name[0]}</div>
-              <div className='other-text-content'>
+              <div className='message-box'>
                   <p className='chat-name'>{props1.name}</p>
-                  <p className='chat-timestap'>{props1.message}</p>
-                  <p className='self-timestap'>12:00am</p>
+                  <p className='chat-message'>{props1.message}</p>
+                  <p className='self-timestap'>12:00 am</p>
               </div>  
     </div>
   )
