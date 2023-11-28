@@ -15,7 +15,7 @@ function MainContainer() {
     },
   ])
 
-  const Chatrea = conversations.map(item => {
+  const Chatarea = conversations.map(item => {
     return (
       <ChatArea
         name={item.name}
@@ -24,12 +24,19 @@ function MainContainer() {
     )
   })
 
+  /* Switching between the Chatarea and the welcome page */
+  const [showChatArea, setshowChatArea] = useState(false);
+
+  const handleClick = () => {
+    setshowChatArea(true)
+  };
+
   return (
     <div className="main-container">
       <SidePanel />
-      {/*{Chatrea}*/}
-
-      <WelcomePage/>
+      {showChatArea? Chatarea: <WelcomePage 
+      handleClick={handleClick}/>}
+      
     </div>
     
   )

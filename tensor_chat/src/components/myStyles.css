@@ -171,3 +171,33 @@
 }
 
 /* WELCOME PAGE */
+.welcome-page-container{
+    background-color: white;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.welcome-page-text{
+    color: var(--neutral-active, #0F1828);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 10px;
+}
+.welcome-button{
+    margin: 10px;
+    color: #FFFFFF;
+    display: flex;
+    width: 327px;
+    padding: 12px 48px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 30px;
+    background: var(--brand-color-default, #002DE3);
+}
