@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import SidePanel from "./SidePanel";
 import ChatArea from "./ChatArea";
 import WelcomePage from "./WelcomePage";
+import CreateGroups from "./CreateGroups";
+import LoginPage from "./LoginPage";
 
 
 function MainContainer() {
@@ -25,17 +27,29 @@ function MainContainer() {
   })
 
   /* Switching between the Chatarea and the welcome page */
-  const [showChatArea, setshowChatArea] = useState(false);
+  const [showLoginPage, setshowLoginPage] = useState(false);
 
   const handleClick = () => {
-    setshowChatArea(true)
+    setshowLoginPage(true)
   };
+
+  /* Switching between login page and chat area*/
+  const [showChatArea, setshowChatArea] = useState(false);
+
+  const handleClick1 = () => {
+    setshowChatArea(true)
+    
+  };
+
 
   return (
     <div className="main-container">
-      <SidePanel />
-      {showChatArea? Chatarea: <WelcomePage 
-      handleClick={handleClick}/>}
+      {/* <SidePanel /> */}
+      {showLoginPage ? <LoginPage handleClick={handleClick1}/>: <WelcomePage 
+      handleClick={handleClick}/>}  
+      {/* <CreateGroups/> */}
+      {showChatArea ? Chatarea : null}
+      
       
     </div>
     
