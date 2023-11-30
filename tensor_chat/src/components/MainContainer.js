@@ -5,6 +5,8 @@ import ChatArea from "./ChatArea";
 import WelcomePage from "./WelcomePage";
 import CreateGroups from "./CreateGroups";
 import LoginPage from "./LoginPage";
+import User_groups from "./User_groups";
+
 
 
 function MainContainer() {
@@ -44,11 +46,13 @@ function MainContainer() {
 
   return (
     <div className="main-container">
-      {/* <SidePanel /> */}
-      {showLoginPage ? <LoginPage handleClick={handleClick1}/>: <WelcomePage 
-      handleClick={handleClick}/>}  
+      <SidePanel /> 
+      {/* {showLoginPage ? <LoginPage handleClick={handleClick1}/>: <WelcomePage 
+      handleClick={handleClick}/>}   */}
       {/* <CreateGroups/> */}
-      {showChatArea ? Chatarea : null}
+      {/* {showChatArea ? Chatarea : null} */}
+      <User_groups/>
+
       
       
     </div>

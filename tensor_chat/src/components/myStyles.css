@@ -44,7 +44,7 @@
     font-size: 1rem;
     margin-left: 10px;
     flex: 1;
-    box-shadow: 5px 5px 10px #888888;
+    
 }
 
 .sp-chatsection {
@@ -52,7 +52,8 @@
     border-radius: 20px;
     padding: 10px 5px;
     margin: 10px;
-    flex: 1; 
+    flex: 1;
+    box-shadow: 5px 5px 10px #888888;
 }
 
 /* Chat Component */
@@ -282,3 +283,9 @@
     height: 100px;
     flex-shrink: 0;
 }
+
+/* User_groups */
+.user-group-container{
+
+}
+
