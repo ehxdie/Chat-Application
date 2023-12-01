@@ -6,6 +6,10 @@ import WelcomePage from "./WelcomePage";
 import CreateGroups from "./CreateGroups";
 import LoginPage from "./LoginPage";
 import User_groups from "./User_groups";
+import { Link, Route, Routes } from 'react-router-dom';
+import Users from "./Users";
+
+
 
 
 
@@ -46,14 +50,25 @@ function MainContainer() {
 
   return (
     <div className="main-container">
-      <SidePanel /> 
-      {/* {showLoginPage ? <LoginPage handleClick={handleClick1}/>: <WelcomePage 
-      handleClick={handleClick}/>}   */}
-      {/* <CreateGroups/> */}
-      {/* {showChatArea ? Chatarea : null} */}
-      <User_groups/>
+    
+      {/* <SidePanel /> 
+      {showLoginPage ? <LoginPage handleClick={handleClick1}/>: <WelcomePage 
+      handleClick={handleClick}/>}  
+      <CreateGroups/> 
+      {showChatArea ? Chatarea : null} 
+      <User_groups/> */}
+  
+      {/*Setting up the routing*/}
+      <Routes>
+          <Route path='/' element={<WelcomePage />}/>  
+          <Route path='/LoginPage' element={<LoginPage/>}/>
+          <Route path="/ChatArea" element={Chatarea}/>
+          <Route path="/User_groups" element={<User_groups/>} />
+          <Route path="/Users" element={<Users/>} />
+          <Route path="/Groups" element={<CreateGroups/>} />
+        
 
-      
+      </Routes>
       
     </div>
     

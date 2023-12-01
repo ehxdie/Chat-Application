@@ -7,7 +7,11 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* Settting up the react router dom using the browser router*/}
+    
+      <App />
+
+   
   </React.StrictMode>
 );
 

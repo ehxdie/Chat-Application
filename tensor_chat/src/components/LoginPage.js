@@ -4,6 +4,7 @@ import icon from "../Images/avatar.svg";
 
 function LoginPage(props){
   return (
+    
     <div className='login-container'>
         <img src={icon} className='login-icon'/>
         <input className='user-name' placeholder='Username'/>

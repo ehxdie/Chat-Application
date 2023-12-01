@@ -5,10 +5,13 @@ import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import ReceivedMessages from './ReceivedMessages';
 import SentMessages from './SentMessages';
+import SidePanel from './SidePanel';
 
 
 function ChatArea(props) {
   return (
+    <>
+    <SidePanel/>
     <div className='chatArea-container'>
 
         <div className='chatArea-header'>
@@ -39,6 +42,7 @@ function ChatArea(props) {
         </div>
 
     </div>
+    </>
     )
 }
 

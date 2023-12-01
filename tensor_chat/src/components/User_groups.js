@@ -7,6 +7,7 @@ import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
 
 
 import { useState } from 'react';
+import SidePanel from './SidePanel';
 
 
 function User_groups() {
@@ -69,6 +70,8 @@ function User_groups() {
   })
 
   return (
+    <>
+    <SidePanel/>
     <div className='user-group-container'>
       <div className='user-group-header'>
         <ContactsOutlinedIcon className='contacts-logo'/> 
@@ -85,7 +88,7 @@ function User_groups() {
       <div className='users'>{User}</div>
 
     </div>
-
+  </>
     
   )
 }
