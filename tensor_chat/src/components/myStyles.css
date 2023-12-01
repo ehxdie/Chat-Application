@@ -26,7 +26,7 @@
     margin: 10px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 5px 5px 10px #888888;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .sp-search {
@@ -35,7 +35,7 @@
     padding: 5px 10px;
     margin: 10px;
     display: flex;
-    box-shadow: 5px 5px 10px #888888;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 
 }
 .search-box {
@@ -53,7 +53,7 @@
     padding: 10px 5px;
     margin: 10px;
     flex: 1;
-    box-shadow: 5px 5px 10px #888888;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 /* Chat Component */
@@ -110,6 +110,7 @@
     display: flex;
     flex-direction: column;
     background-color: #dfdfdf;
+    flex: 0.7;
 
 }
 .chatArea-header{
@@ -120,6 +121,7 @@
    padding: 10px 10px;
    margin: 10px;
    border-radius: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 
 }
 .header-text{
@@ -133,6 +135,7 @@
     overflow: scroll;
     margin-left: 10px;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 .chatArea-messages::-webkit-scrollbar{
     display: none;
@@ -168,6 +171,7 @@
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .self-timestap{
@@ -213,7 +217,6 @@
 
 /* Create Groups Container */
 .createGroups-container {
-    flex: 0.7;
     align-self: center;
     padding: 20px 10px;
     background-color: #FFFFFF;
@@ -221,6 +224,7 @@
     display: flex;
     justify-content: space-between;
     margin: 10px;
+    flex: 0.7;
 
 }
 
@@ -287,7 +291,7 @@
 
 /* User_groups */
 .user-group-container{
-    flex: 1;
+    flex: 0.7;
     display: flex;
     flex-direction: column;
 

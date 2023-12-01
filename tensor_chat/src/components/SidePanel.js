@@ -9,7 +9,9 @@ import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import Chats from './Chats';
 import { useState } from 'react';
-import ChatArea from './ChatArea';
+
+import { useNavigate } from "react-router-dom";
+
 
 
 function SidePanel() {
@@ -40,7 +42,8 @@ function SidePanel() {
 
    
     
-
+  // Setting up the navigation using the side panel
+  const navigate = useNavigate();
   return (
     <div className='side-panel'>
         {/* The header section of the side panel*/}
@@ -48,19 +51,27 @@ function SidePanel() {
             {/*The <IconButton> makes the account.. icon clickable 
             the account */ }
             <div>
-                  <IconButton>
+                  <IconButton onClick={() => {
+                      navigate("/ChatArea")
+                  }}>
                       <AccountCircleIcon />
                   </IconButton>
             </div>
             
             <div>
-                  <IconButton>
+                  <IconButton onClick={() => {
+                      navigate("/UserList")
+                  }} >
                       <PersonAddAltOutlinedIcon />
                   </IconButton>
-                  <IconButton>
+                  <IconButton onClick={() => {
+                      navigate("/GroupList")
+                  }} >
                       <GroupAddOutlinedIcon />
                   </IconButton>
-                  <IconButton>
+                  <IconButton onClick={() => {
+                      navigate("/Groups")
+                  }}>
                       <AddCircleOutlineOutlinedIcon />
                   </IconButton>
                   <IconButton>

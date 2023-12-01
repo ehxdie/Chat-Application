@@ -5,8 +5,10 @@ import ChatArea from "./ChatArea";
 import WelcomePage from "./WelcomePage";
 import CreateGroups from "./CreateGroups";
 import LoginPage from "./LoginPage";
-import User_groups from "./User_groups";
+import UserList from "./UserList";
 import { Link, Route, Routes } from 'react-router-dom';
+import GroupList from "./GroupList";
+
 import Users from "./Users";
 
 
@@ -63,8 +65,8 @@ function MainContainer() {
           <Route path='/' element={<WelcomePage />}/>  
           <Route path='/LoginPage' element={<LoginPage/>}/>
           <Route path="/ChatArea" element={Chatarea}/>
-          <Route path="/User_groups" element={<User_groups/>} />
-          <Route path="/Users" element={<Users/>} />
+          <Route path="/UserList" element={<UserList/>} />
+        <Route path="/GroupList" element={<GroupList />} />
           <Route path="/Groups" element={<CreateGroups/>} />
         
 

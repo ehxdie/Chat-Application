@@ -10,49 +10,28 @@ import { useState } from 'react';
 import SidePanel from './SidePanel';
 
 
-function User_groups() {
+function UserList() {
   /* Setting up dummy data for the user c preview */
   const [userStatus, setUserStatus] = useState([
     {
-      name: "Test1",
+      name: "User1",
      
     },
     {
-      name: "Test2",
+      name: "User2",
   
     },
     {
-      name: "Test3",
+      name: "User2",
 
     },
     {
-      name: "Test2",
-
-    }, ,
-    {
-      name: "Test2",
-
-    }, ,
-    {
-      name: "Test2",
-
-    }, ,
-    {
-      name: "Test2",
-
-    }, ,
-    {
-      name: "Test2",
-
-    }, ,
-    {
-      name: "Test2",
-
-    }, ,
-    {
-      name: "Test2",
+      name: "User2",
 
     },
+    
+    
+    
   ])
 
   /* Setting up a variable that set the <chat/> props */
@@ -75,7 +54,7 @@ function User_groups() {
     <div className='user-group-container'>
       <div className='user-group-header'>
         <ContactsOutlinedIcon className='contacts-logo'/> 
-        Contacts
+        Available Users
       </div>
 
       <div className='sp-search'>
@@ -93,4 +72,4 @@ function User_groups() {
   )
 }
 
-export default User_groups
+export default UserList
