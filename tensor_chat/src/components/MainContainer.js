@@ -66,7 +66,7 @@ function MainContainer() {
           <Route path='/LoginPage' element={<LoginPage/>}/>
           <Route path="/ChatArea" element={Chatarea}/>
           <Route path="/UserList" element={<UserList/>} />
-        <Route path="/GroupList" element={<GroupList />} />
+          <Route path="/GroupList" element={<GroupList />} />
           <Route path="/Groups" element={<CreateGroups/>} />
         
 

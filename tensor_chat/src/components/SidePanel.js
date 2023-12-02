@@ -12,6 +12,9 @@ import Chats from './Chats';
 import { useState } from 'react';
 
 import { useNavigate } from "react-router-dom";
+import { useSelector } from 'react-redux';
+import { toggleTheme } from '../Features/themeSlice';
+import { useDispatch } from'react-redux';
 
 
 
@@ -42,19 +45,26 @@ function SidePanel() {
             lastMessage={item.lastMessage}
             timeStap={item.timeStap}
             key = {item.name}
-            onClick={() => {
-                    navigate("/ChatArea")
-                }}/>
+           />
         )
     })
 
    /* Setting up toogle button to change to dark mode */
-   const [theme, setTheme] = useState(true);
+//    const [theme, setTheme] = useState(true);
 
+//    const handleClick = () => {
+//        setTheme(!theme);
+//    };
+
+   /* Setting up toogle button to change to dark mode using react-dom */
+   const theme = useSelector(state => state);
+
+   // This handles the dispatching of the toggle theme action
+   const dispatch = useDispatch();
+   
    const handleClick = () => {
-       setTheme(!theme);
-   };
-
+        dispatch(toggleTheme())
+    }
     
   
   return (
