@@ -25,12 +25,12 @@ function SidePanel() {
     /* Setting up dummy data for the chat preview*/
     const [conversations, setConversations] = useState([
         {
-            name: "Test1",
+            name: "Test 1",
             lastMessage: "Last message",
             timeStap: "today"
         },
         {
-            name: "Test2",
+            name: "Test 2",
             lastMessage: "Last message",
             timeStap: "today"
         }
@@ -57,15 +57,13 @@ function SidePanel() {
 //    };
 
    /* Setting up toogle button to change to dark mode using react-dom */
-   const theme = useSelector(state => state);
-
+    
+   const theme = useSelector((state) => state);
+    console.log(theme);
    // This handles the dispatching of the toggle theme action
    const dispatch = useDispatch();
    
-   const handleClick = () => {
-        dispatch(toggleTheme())
-    }
-    
+   
   
   return (
     <div className='side-panel'>
@@ -98,7 +96,7 @@ function SidePanel() {
                   }}>
                       <AddCircleOutlineOutlinedIcon className={theme ? "icons" : "icons-dark"} />
                   </IconButton>
-                  <IconButton onClick={handleClick}>
+                  <IconButton onClick={() => dispatch(toggleTheme())}>
                       {theme && <DarkModeOutlinedIcon />} {!theme &&  <WbSunnyOutlinedIcon className="icons-dark"/>}
                   </IconButton>
 
@@ -111,7 +109,7 @@ function SidePanel() {
             <IconButton>
                   <SearchOutlinedIcon className={theme ? "icons" : "icons-dark"} />
             </IconButton>
-            <input placeholder='Search' className='search-box'></input>
+              <input placeholder='Search' className={"search-box" + (theme ? "" : "-dark")}></input>
         </div>
 
         {/* The chat section of the side panel*/}

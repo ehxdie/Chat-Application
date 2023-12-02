@@ -81,6 +81,17 @@
     padding: 10px;
     
 }
+.search-box-dark{
+    background-color: var(--neutral-active, #0F1828);
+    outline-width: 0;
+    border: none;
+    font-size: 1rem;
+    margin-left: 15px;
+    flex: 1;
+    border-radius: 20px;
+    padding: 10px;
+    color: #FFFFFF;
+}
 
 .sp-chatsection {
     background-color: #FFFFFF;
@@ -111,6 +122,12 @@
     border-radius: 20px;
     overflow: scroll;
     transition-duration: 0.5s;
+    color: var(--neutral-active, #0F1828);
+        /* Body/01 */
+        font-family: 'Karla', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-style: normal;
+        /* 171.429% */
 
 }
 .chat-box:hover{
@@ -128,7 +145,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(156, 156, 156);
+        
 
     font-size: 2rem;
     font-weight: bolder;
@@ -147,10 +165,29 @@
     align-self: center;
     font-weight: bold;
 }
+.chat-name-dark{
+    grid-area: 1/2/2/4;
+        justify-content: center;
+        align-self: center;
+        font-weight: bold;
+        color: #F7F7FC;
+}
 .chat-lastmessage{
-    
+    font-size: 14px;
+}
+.chat-lastmessage-dark {
+    color: #ADB5BD;
+    font-size: 14px;
 }
 .chat-timestap{
+    font-size: 0.75rem;
+    justify-self: flex-end;
+    justify-content: center;
+    align-self: center;
+  
+}
+.chat-timestap-dark{
+    color:#ADB5BD;
     font-size: 0.75rem;
     justify-self: flex-end;
     justify-content: center;
@@ -163,6 +200,7 @@
     flex-direction: column;
     background-color: #dfdfdf;
     flex: 0.7;
+   
 
 }
 .chatArea-header{
@@ -174,6 +212,8 @@
    margin: 10px;
    border-radius: 20px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+font-family: 'Karla', sans-serif;
+    font-family: 'Rubik', sans-serif;
 
 }
 .header-text{
@@ -199,6 +239,8 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     gap: 10px;
     padding: 10px 10px;
     border-radius: 20px;
+    font-family: 'Karla', sans-serif;
+        font-family: 'Rubik', sans-serif;
     
 
 }
@@ -208,6 +250,8 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     align-items: center;
     gap: 10px;
     padding: 10px 10px;
+    font-family: 'Karla', sans-serif;
+        font-family: 'Rubik', sans-serif;
 
 }
 .message-box {
