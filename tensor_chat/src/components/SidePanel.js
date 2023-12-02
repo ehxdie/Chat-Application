@@ -15,6 +15,9 @@ import { useNavigate } from "react-router-dom";
 
 
 function SidePanel() {
+
+    // Setting up the navigation using the side panel
+    const navigate = useNavigate();
     /* Setting up dummy data for the chat preview*/
     const [conversations, setConversations] = useState([
         {
@@ -36,14 +39,17 @@ function SidePanel() {
             <Chats 
             name = {item.name}
             lastMessage={item.lastMessage}
-            timeStap={item.timeStap}/>
+            timeStap={item.timeStap}
+            key = {item.name}
+            onClick={() => {
+                    navigate("/ChatArea")
+                }}/>
         )
     })
 
    
     
-  // Setting up the navigation using the side panel
-  const navigate = useNavigate();
+  
   return (
     <div className='side-panel'>
         {/* The header section of the side panel*/}
@@ -74,7 +80,9 @@ function SidePanel() {
                   }}>
                       <AddCircleOutlineOutlinedIcon />
                   </IconButton>
-                  <IconButton>
+                  <IconButton onClick={()=> {
+
+                  }}>
                       <DarkModeOutlinedIcon />
                   </IconButton>
 
@@ -91,7 +99,7 @@ function SidePanel() {
         </div>
 
         {/* The chat section of the side panel*/}
-        <div className='sp-chatsection'>{Chat}</div>
+          <div className='sp-chatsection' >{Chat}</div>
     </div>
     
   )

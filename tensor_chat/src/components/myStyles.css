@@ -66,6 +66,14 @@
     margin: 5px;
     border-radius: 20px;
     overflow: scroll;
+    transition-duration: 0.5s;
+
+}
+.chat-box:hover{
+    background-color: #b7b6b6;
+}
+.chat-box:active{
+    background-color: #dfdfdf;
 }
 .chat-box::-webkit-scrollbar{
     display: none;
