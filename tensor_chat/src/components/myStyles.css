@@ -19,6 +19,19 @@
 }
 
 /* SIDE PANEL*/
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icons-dark{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .sp-header {
     background-color: #FFFFFF;
     border-radius: 20px;
@@ -27,6 +40,17 @@
     display: flex;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.sp-header-dark {
+    background-color: var(--neutral-active, #0F1828);
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    
 }
 
 .sp-search {
@@ -38,12 +62,23 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 
 }
+.sp-search-dark{
+    background-color: var(--neutral-active, #0F1828);
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 10px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
 .search-box {
     outline-width: 0;
     border: none;
     font-size: 1rem;
-    margin-left: 10px;
+    margin-left: 15px;
     flex: 1;
+    border-radius: 20px;
+    padding: 10px;
     
 }
 
@@ -56,6 +91,15 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
+.sp-chatsection-dark{
+    background-color: var(--neutral-active, #0F1828);
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 5px;
+    margin: 10px;
+    flex: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
 /* Chat Component */
 .chat-box {
     display: grid;
